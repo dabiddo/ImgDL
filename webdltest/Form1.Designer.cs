@@ -34,6 +34,7 @@
             this.linkstxt = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.imgdownload = new System.Windows.Forms.PictureBox();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgdownload)).BeginInit();
@@ -76,6 +77,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.progressBar);
             this.groupBox1.Controls.Add(this.imgdownload);
             this.groupBox1.Location = new System.Drawing.Point(411, 18);
             this.groupBox1.Name = "groupBox1";
@@ -89,8 +91,16 @@
             this.imgdownload.Location = new System.Drawing.Point(7, 20);
             this.imgdownload.Name = "imgdownload";
             this.imgdownload.Size = new System.Drawing.Size(404, 428);
+            this.imgdownload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgdownload.TabIndex = 0;
             this.imgdownload.TabStop = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(7, 455);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(404, 23);
+            this.progressBar.TabIndex = 1;
             // 
             // Form1
             // 
@@ -105,6 +115,7 @@
             this.Text = "IgmDL";
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgdownload)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -119,6 +130,7 @@
         private System.Windows.Forms.RichTextBox linkstxt;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox imgdownload;
+        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 
